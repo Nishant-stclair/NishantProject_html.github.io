@@ -1,0 +1,336 @@
+body {
+    padding: 20px;
+    min-height: 60vh;
+    display:flex;
+    flex-direction: column;
+    font-family: "Inter", Arial, Helvetica, sans-serif
+} 
+
+header {
+    background-color: #f8f8e6;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aced;
+    padding: 20px 30px;
+}
+.sign-in {
+    display: inline-block;
+    background-color: #00aced;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav {
+    position: absolute;
+    top:15 px;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: grey;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.analytics-content{
+    background-color: #f8f8e6;
+display: flex;
+height: 45vh;
+
+}
+
+.analytics-content .sign-in {
+    display: inline-block;
+    background-color: #00aced;
+    color: #fff;
+    position: relative;
+    padding: 10px 20px;
+    margin: 90px;
+    bottom: -150px;
+    text-decoration: none;
+    border-radius: 5px;
+    left: -950px;
+    height: 3vh;
+}
+
+.twitter-logo {
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 10;
+} h1{
+    font-size: 30px;
+}
+ .analytics-content p{
+    position: relative;
+    padding: 0 10px;
+    color: grey;
+    bottom: -150px;
+    left:-333px;
+}
+.learn-more{
+    top: 32px;
+    color: #6335e4;
+    display: inline-flex;
+    position: relative;
+    bottom: -150px;
+    align-items: center;
+    left: -1000px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.features h2{
+    padding: 10px 20px;
+}
+.container{
+    gap: 20px;
+    display:grid;
+    grid-template-columns: 0fr 0fr;
+    grid-template-rows: 0 fr 0fr;
+}
+.info-box {
+    width: 500px;
+    height: 140px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+ .info-box p{
+    line-height: 1.4;
+}
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .sign-in {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        padding: 15px 20px;
+    }
+
+    nav {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .twitter-analytics-section h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 600px) {
+    .twitter-analytics-section h1 {
+        font-size: 24px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .sign-in {
+        margin: 10px auto;
+        padding: 8px 15px;
+    }
+
+    .twitter-logo {
+        display: none;
+    }
+
+    .twitter-analytics-section h1 {
+        font-size: 22px;
+    }
+
+    .info-box {
+        max-width: 100%;
+    }
+}
+.customers{
+    background-color: #b1e2f3;
+    margin: 0 20px;
+    padding: 0 20px;
+    height: auto;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    position: relative;
+    align-items: flex-start;
+    margin-right: 0.5rem;
+  }
+.twitter-card{
+    background-color: #FDFCF9;
+    border: 2px solid #FDFCF9;
+    border-radius: 5px;
+    position:  relative;
+    width: 270px;
+    height: auto;
+  }
+  .twitter-card h3{
+      position: absolute;
+      margin: -34px 50px;
+    }
+    .twitter-card p{
+word-spacing: 1px;
+line-height: 1.5;
+}
+.twitter-card .likes{
+    position: absolute;
+    font-size: smaller;
+    margin: -26px 26px;
+}
+.twitter-card .date{
+    position: absolute;
+    bottom: -4px;
+    right: 10px;
+    font-size: small;
+}
+.twitter-card .id{
+    position: absolute;
+    margin:-13px 37px;
+    font-size: smaller;
+}
+.blue-logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.pricing-container h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+}
+
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pricing-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300 px auto;
+    height:350px;
+    background-color: rgb(247, 247, 234);
+    border: 2px solid orange;
+    transition: transform 0.3s;
+  }
+  .pricing-container:hover .pricing-card {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .pricing-card h5 {
+    font-size: 20px;
+    color:gray;
+    margin-bottom: 0px;
+  }
+
+  .pricing-card h6 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+  .pricing-card hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    position: relative;
+    top:-84px;
+  }
+  .pricing-card p{
+    position: relative;
+    top:-84px;
+  }
+  .sign-in-1 {
+    display: inline-block;
+    background-color: #00aced;
+    color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -90px;
+    padding: 10px 20px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footer{
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 20px;
+}
+
+.footer .logo-1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00aced;
+    padding: 10px;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+  }
